@@ -26,7 +26,7 @@ struct Person : FullyNamed{
 
 class XYZ : FullyNamed {
     var fullName: String {
-        if (prefix == "") {
+        if (prefix == nil) {
             return self.name
         }
         else {
